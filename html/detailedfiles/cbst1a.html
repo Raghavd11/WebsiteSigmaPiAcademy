@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Security Syllabus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/stylesheet.css">
+    <link rel="icon" type="image" href="/pictures/SigmaPi Logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="header">
+    <div class="logo-container">
+        <a href="/index.html"><img class="logo-img" src="/pictures/SigmaPi Logo.png" alt="SigmaPi-Academy Logo" style="border: none;"/></a>
+        <span class="logo-text">SigmaPi-Academy</span>
+    </div>
+  <nav class="navbar">
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links" id="navLinks">
+      <li class="dropdown">
+        <a href="#" class="nav-link">CLASS XI</a>
+        <div class="dropdown-content">
+          <a href="/html/arti1.html">COMA</a>
+          <a href="/html/cbst1.html">CBST</a>
+          <a href="/html/arti1.html">ARTI</a>
+          <a href="/html/coms1.html">COMS</a>
+          <a href="/html/dtsc1.html">DTSC</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="nav-link">CLASS XII</a>
+        <div class="dropdown-content">
+          <a href="/html/coma2.html">COMA</a>
+          <a href="/html/cbst2.html">CBST</a>
+          <a href="/html/arti2.html">ARTI</a>
+          <a href="/html/coms2.html">COMS</a>
+          <a href="/html/dtsc2.html">DTSC</a>
+        </div>
+      </li>
+      <li>
+        <a href="#" class="nav-link register-button" onclick="openModal()">Register</a>
+      </li>
+      <li class="contact-container">
+        <div class="nav-link">Contact Us
+          <!-- <i class="fas fa-comment-dots"></i> -->
+        </div>
+        <div class="contact-dropdown" id="contactDropdown">
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span class="contact-link">+91 9883183128</span>
+            <button class="copy-btn" onclick="copyToClipboard('+919883183128', this)">
+              <i class="far fa-copy"></i>
+            </button>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span class="contact-link">info@sigmapi-academy.com</span>
+            <button class="copy-btn" onclick="copyToClipboard('info@sigmapi-academy.com', this)">
+              <i class="far fa-copy"></i>
+            </button>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+
+  <!-- Mobile Menu (hidden by default) -->
+  <div id="mobileMenu" class="mobile-menu hidden">
+    <div class="mobile-menu-item" data-key="xi">
+      <div class="mobile-menu-title">CLASS XI</div>
+      <div class="mobile-submenu">
+        <a href="/html/coma1.html">COMA</a>
+        <a href="/html/cbst1.html">CBST</a>
+        <a href="/html/arti1.html">ARTI</a>
+        <a href="/html/coms1.html">COMS</a>
+        <a href="/html/dtsc1.html">DTSC</a>
+      </div>
+    </div>
+    <div class="mobile-menu-item" data-key="xii">
+      <div class="mobile-menu-title">CLASS XII</div>
+      <div class="mobile-submenu">
+        <a href="/html/coma2.html">COMA</a>
+        <a href="/html/cbst2.html">CBST</a>
+        <a href="/html/arti2.html">ARTI</a>
+        <a href="/html/coms2.html">COMS</a>
+        <a href="/html/dtsc2.html">DTSC</a>
+      </div>
+    </div>
+    <div class="mobile-menu-item register-item" data-key="register">
+  <div class="mobile-menu-title register-btn" onclick="openModal()">Register</div>
+</div>
+    <div class="mobile-menu-item" data-key="contact">
+      <div class="mobile-menu-title">Contact Us</div>
+      <div class="mobile-submenu">
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <span>+91 9883183128</span>
+          <button class="copy-btn" onclick="copyToClipboard('+919883183128', this)">
+            <i class="far fa-copy"></i>
+          </button>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>info@sigmapi-academy.com</span>
+          <button class="copy-btn" onclick="copyToClipboard('info@sigmapi-academy.com', this)">
+            <i class="far fa-copy"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<br><br><br><br>
+<div style="text-align: center;">
+  <span class="subject">CYBER SECURITY</span>
+</div>
+<h2 class="detailed">Semester I - Detailed Syllabus</h2>
+
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>Unit</th>
+        <th>Topics</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+  <td>
+    <div class="unit-wrapper">
+      <span class="unit-title">Unit 1:</span>
+      <span>Computer Systems</span>
+    </div>
+  </td>
+  <td>
+    <strong>1.1: Evolution of Computers</strong><br />
+    • Generations of Computers<br />
+    • Brief Introduction to Quantum Computers<br /><br />
+
+    <strong>1.2: Computer Organization</strong><br />
+    • Logic Gates and Truth Tables: AND, OR, NOT, XOR<br />
+    • Functional Components and Interconnections<br />
+    • Memory Organization (Diagrams Only), Types<br />
+    • I/O Devices<br /><br />
+
+    <strong>1.3: Encoding Schemes and Number Systems</strong><br />
+    • ASCII, EBCDIC<br />
+    • Binary, Octal, Hexadecimal Number Systems<br /><br />
+
+    <strong>1.4: Data and Information</strong><br />
+    • Definitions<br />
+    • Data vs. Information (with examples)<br />
+    • Types of Data<br /><br />
+
+    <strong>1.5: Operating Systems</strong><br />
+    • Roles and Functions<br />
+    • Types of OS<br />
+    • Concepts: Processes, Threads, Memory Management<br />
+    • File Systems<br /><br />
+
+    <strong>1.6: Database Management Systems (DBMS)</strong><br />
+    • Importance of Databases<br />
+    • Role of DBMS<br />
+    • Relational Databases<br />
+    • Introduction to SQL<br /><br />
+
+    <strong>1.7: Programming a Computer</strong><br />
+    • Algorithms (Pseudocode), Flowcharts<br />
+    • Compiler vs Interpreter<br />
+    • Programming Languages: C, C++, Python, Java, JavaScript<br />
+    • Python Programming (Simple Introduction)<br />
+    &nbsp;&nbsp;– Installation, Basic Syntax<br />
+    &nbsp;&nbsp;– Conditionals, Loops, Arrays/Lists/Sets, Functions
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <div class="unit-wrapper">
+      <span class="unit-title">Unit 2:</span>
+      <span>Computer Networks</span>
+    </div>
+  </td>
+  <td>
+    <strong>2.1: Types of Networks</strong><br />
+    • LAN, MAN, WAN, Wireless LAN, Internet<br /><br />
+
+    <strong>2.2: Components of a Network</strong><br />
+    • Servers, Workstations, NICs<br />
+    • Guided Media: UTP, STP, Co-axial, Fibre Optic<br />
+    • Unguided Media: IR, Radio, Microwave, Satellite<br />
+    • Devices: Repeaters, Hubs, Bridges, Switches, Routers, Gateways<br /><br />
+
+    <strong>2.3: Network Topologies</strong><br />
+    • Mesh, Ring, Bus, Star, Tree, Hybrid<br /><br />
+
+    <strong>2.4: Channel Concepts</strong><br />
+    • Channel, Bandwidth (Hz, KHz, MHz)<br />
+    • Data Transfer Rate (bps, Kbps, Mbps, Gbps, Tbps)<br /><br />
+
+    <strong>2.5: The Internet</strong><br />
+    • History and Evolution<br />
+    • TCP/IP Stack and Protocols<br />
+    • MAC Address<br />
+    • IPv4 Classes A, B, C<br />
+    • Subnet Mask and Default Gateway<br />
+    • IPv6 (Basic Format)<br />
+    • ICMP<br /><br />
+
+    <strong>2.6: Internet Applications</strong><br />
+    • E-mail, WWW, Domain Name Systems<br /><br />
+
+    <strong>2.7: Internet of Things (IoT)</strong><br />
+    • IoT Architecture<br />
+    • IoT Devices: Sensors, Actuators, Gateways<br />
+    • IoT Protocols: MQTT, CoAP, Zigbee<br /><br />
+
+    <strong>2.8: Cloud Computing</strong><br />
+    • Cloud Service Models: IaaS, PaaS, SaaS<br />
+    • Deployment Models: Public, Private, Hybrid<br />
+    • Overview of Cloud Storage<br />
+    • Major Providers: AWS, Azure, Google Cloud
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <div class="unit-wrapper">
+      <span class="unit-title">Unit 3:</span>
+      <span>Introduction to Cybersecurity</span>
+    </div>
+  </td>
+  <td>
+    <strong>3.1: Overview of Cybersecurity</strong><br />
+    • Relevance in the Modern World<br /><br />
+
+    <strong>3.2: History of Cybersecurity</strong><br />
+    • Major Incidents and Their Impact<br /><br />
+
+    <strong>3.3: CIA Triad</strong><br />
+    • Confidentiality, Integrity, Availability<br /><br />
+
+    <strong>3.4: Key Terms and Concepts</strong><br />
+    • Security, Privacy, Threats, Vulnerabilities<br />
+    • Exploits, Risks, Attacks, Attack Vectors<br />
+    • Hackers vs. Crackers<br /><br />
+
+    <strong>3.5: Cyber Threats and Classification</strong><br />
+    • Malware<br />
+    • Social Engineering<br />
+    • DoS/DDoS<br />
+    • Insider Threats<br />
+    • Advanced Persistent Threats (APTs)<br />
+    • Data Breaches, Information Theft
+  </td>
+</tr>
+
+    </tbody>
+  </table>
+</div>
+
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Left: Logo -->
+    <div class="footer-logo">
+      <a href="https://sigmapi-academy.com/" target="_blank" class="logo">
+        <img class="logo-img" src="/pictures/SigmaPi Logo.png" alt="logo" />
+        <span class="logo-text">Sigmapi-Academy</span>
+      </a>
+    </div>
+
+    <!-- Center: Quote -->
+    <div class="blockquote-container">
+      <blockquote>
+        <p>"Disciplined effort is the key to mastery."</p>
+        <cite>~ Satyender Kumar Mishra</cite>
+      </blockquote>
+    </div>
+
+    <!-- Right: Social Icons -->
+    <div class="footer-social">
+      <a href="https://api.whatsapp.com/send?phone=919883183128" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://www.facebook.com/sigma.pi.academy.com9883183128" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://x.com/SigmaPiAcademy" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.instagram.com/sigmapi.academy/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/satyender-mishra-75963799/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/@sigmapiacademy" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+
+  <div class="underline"></div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 SigmaPi. All Rights Reserved.</p>
+  </div>
+</footer>
+
+    <!-- Modal Structure -->
+  <div id="registerForm" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="/pictures/SigmaPi Logo.png" width="30px" height="30px" alt="Logo" />
+        <button class="close" onclick="closeModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+          <iframe style="width: 100%; height: 70vh;"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSe_km_Qpf4Vh0bY7QELvZ0QbQHFLHU4Y3b3SQg3X26aIQXtNw/viewform?embedded=true"
+            frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+    </div>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>

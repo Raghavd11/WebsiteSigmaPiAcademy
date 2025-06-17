@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="Images/SigmaPi Logo.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>SigmaPi Academy</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">
+        <img src="./Images/SigmaPi Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        SigmaPi Academy
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown dropdown-hover">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Courses
+            </a>
+            <div class="dropdown-menu dropdown-hover-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" style="font-family:'Montserrat', sans-serif;"
+                href="school-based.html">School-Based</a>
+              <a class="dropdown-item" style="font-family:'Montserrat', sans-serif;"
+                href="college-based.html">College-Based</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Pages/pages.html">Knowledge Hub</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Testimonials/testimonials.html">Testimonials</a>
+          </li>
+          <div class="form-inline my-2 my-lg-0">
+            <button class="mr-2 btn btn-outline-primary" data-toggle="modal"
+              style="font-family:'Montserrat', sans-serif;" data-target="#registerForm">
+              Register
+            </button>
+          </div>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="hero">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2>Welcome to</h2>
+            <h2><span>SigmaPi</span> Academy!</h2>
+            <p>Register and attend live classes according to your schedule.</p>
+            <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#registerForm">Register</a>
+          </div>
+          <div class="col-md-6">
+            <img src="Images/Hero.png" alt="Image">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <blockquote class="quote-card">
+        <p>
+          Disciplined effort is the key to mastery.
+        </p>
+        <cite>
+          Satyender Kumar Mishra
+        </cite>
+      </blockquote>
+    </div>
+    <div class="about">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div id="video-section">
+              <div class="youtube-player" data-id="Gps66kIKGns"></div>
+              <script>
+                document.addEventListener("DOMContentLoaded",
+                  function () {
+                    var div, n,
+                      v = document.getElementsByClassName("youtube-player");
+                    for (n = 0; n < v.length; n++) {
+                      div = document.createElement("div");
+                      div.setAttribute("data-id", v[n].dataset.id);
+                      div.innerHTML = labnolThumb(v[n].dataset.id);
+                      div.onclick = labnolIframe;
+                      v[n].appendChild(div);
+                    }
+                  });
+
+                function labnolThumb(id) {
+                  var thumb = '<img src="Images/Poster.jpg">',
+                    play = '<div class="play"></div>';
+                  return thumb.replace("ID", id) + play;
+                }
+
+                function labnolIframe() {
+                  var iframe = document.createElement("iframe");
+                  var embed = "https://www.youtube.com/embed/ID?autoplay=1";
+                  iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+                  iframe.setAttribute("frameborder", "0");
+                  iframe.setAttribute("allowfullscreen", "1");
+                  this.parentNode.replaceChild(iframe, this);
+                }
+              </script>
+            </div>
+          </div>
+          <div class="col-md-6" style="font-family: 'Montserrat', sans-serif">
+            <h2 class="section-title">About Us</h2>
+            <h5>
+              Greetings and welcome to all the kids out there!
+            </h5>
+            <p class="text-justify">
+              We welcome you to the platform where we constantly strive to offer the best of education in computing
+              technologies. This platform has been designed for every student wishing to expand their knowledge as well
+              as share their knowledge and is ready to grab their opportunity in life, and create opportunities for
+              others too.
+              <br><br>
+              Thank you for choosing and supporting us!
+            </p>
+            <a class="btn btn-primary" href="Testimonials/testimonials.html">Know More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="service">
+      <div class="container-fluid">
+        <div class="section-header">
+          <h2>Announcements</h2>
+          <p>Guaranteed Score of 95% or above in boards.</p>
+        </div>
+        <!-- row-cols-lg-4 row-cols-xl-5 -->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3" style="font-family: 'Montserrat', sans-serif">
+          <div class="col mb-4">
+            <a href="Courses/School/icse.html" style="text-decoration: none; color: inherit;">
+              <div class="card">
+                <img src="Images/announce-1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title">ICSE Class VIII and IX batches starting from April</h4>
+                  <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col mb-4">
+            <a href="Courses/School/cbsecs.html" style="text-decoration: none; color: inherit;">
+              <div class="card">
+                <img src="Images/announce-2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title">CBSE and ISC Class XII batches starting from April</h4>
+                  <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col mb-4">
+            <a href="Courses/School/ap.html" style="text-decoration: none; color: inherit;">
+              <div class="card">
+                <img src="Images/announce-3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title" style="padding-bottom: 32px;">AP class starting from 15 March</h4>
+                  <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+  </main>
+  <div class="modal fade" id="registerForm" tabindex="-1" role="dialog" aria-labelledby="registerFormLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="Images/SigmaPi Logo.png" width="30px" height="30px" alt="Logo">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <iframe style="width: 100%; height: 70vh;"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSe_km_Qpf4Vh0bY7QELvZ0QbQHFLHU4Y3b3SQg3X26aIQXtNw/viewform?embedded=true"
+            frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="footer-about">
+              <h2>About SigmaPi</h2>
+              <p>
+                SigmaPi is an online platform that provides live interactive computer classes to school and college
+                students.
+              </p>
+              <br>
+              <p><i class="fa fa-map-marker-alt"></i> Kolkata, India</p>
+              <p><i class="fa fa-phone-alt"></i> +91 98831 83128</p>
+              <p><i class="fa fa-envelope"></i> bluejteacher@gmail.com</p>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="footer-link">
+                  <h2>miscellaneous</h2>
+                  <a href="#">Terms & Conditions</a>
+                  <a href="./Misc/privacy.html">Privacy Policy</a>
+                  <a href="tel:+91-988-318-3128">Contact</a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="footer-link">
+                  <h2>Social Media</h2>
+                  <a target="_blank" href="https://www.facebook.com/Sigma-Pi-Academy-113496663694837"><i
+                      class="fab fa-facebook"></i> Facebook</a>
+                  <a target="_blank" href="https://api.whatsapp.com/send?phone=919883183128"><i
+                      class="fab fa-whatsapp"></i> Whatsapp</a>
+                  <a target="_blank" href="https://www.instagram.com/bluejteacher/"><i class="fab fa-instagram"></i>
+                    Instagram</a>
+                  <a target="_blank" href="https://www.youtube.com/channel/UCfB67QqVUDy8GE00Ly6gCQQ/featured"><i
+                      class="fab fa-youtube"></i> Youtube</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container copyright">
+        <div class="row">
+          <div class="col-md-6">
+            <p>&copy; <a href="#">SigmaPi Academy</a>, All Rights Reserved. </p>
+          </div>
+          <div class="col-md-6">
+            <p>Made with &#10084; by <a target="_blank" href="https://www.linkedin.com/in/anubhavbagri/">Anubhav
+                Bagri</a></p>
+            <!-- <p>Disciplined effort is key to mastery.</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script>
+    // disable right click
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    document.onkeydown = function (e) {
+      // disable F12 key
+      if (e.keyCode == 123) {
+        return false;
+      }
+      // disable I key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+        return false;
+      }
+      // disable J key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        return false;
+      }
+      // disable U key
+      if (e.ctrlKey && e.keyCode == 85) {
+        return false;
+      }
+    }
+  </script>
+</body>
+
+</html>

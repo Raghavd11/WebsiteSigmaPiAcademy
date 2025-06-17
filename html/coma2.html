@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Application</title>
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <link rel="icon" type="image" href="/pictures/SigmaPi Logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+   <header class="header">
+    <div class="logo-container">
+        <a href="/index.html"><img class="logo-img" src="/pictures/SigmaPi Logo.png" alt="SigmaPi-Academy Logo" style="border: none;"/></a>
+        <span class="logo-text">SigmaPi-Academy</span>
+    </div>
+
+  <nav class="navbar">
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links" id="navLinks">
+      <li class="dropdown">
+        <a href="#" class="nav-link">CLASS XI</a>
+        <div class="dropdown-content">
+          <a href="coma1.html">COMA</a>
+          <a href="cbst1.html">CBST</a>
+          <a href="arti1.html">ARTI</a>
+          <a href="coms1.html">COMS</a>
+          <a href="dtsc1.html">DTSC</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="nav-link">CLASS XII</a>
+        <div class="dropdown-content">
+          <a href="coma2.html">COMA</a>
+          <a href="cbst2.html">CBST</a>
+          <a href="arti2.html">ARTI</a>
+          <a href="coms2.html">COMS</a>
+          <a href="dtsc2.html">DTSC</a>
+        </div>
+      </li>
+      <li>
+        <a href="#" class="nav-link register-button" onclick="openModal()">Register</a>
+      </li>
+      <li class="contact-container">
+        <div class="nav-link">Contact Us
+          <!-- <i class="fas fa-comment-dots"></i> -->
+        </div>
+        <div class="contact-dropdown" id="contactDropdown">
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span class="contact-link">+91 9883183128</span>
+            <button class="copy-btn" onclick="copyToClipboard('+919883183128', this)">
+              <i class="far fa-copy"></i>
+            </button>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span class="contact-link">info@sigmapi-academy.com</span>
+            <button class="copy-btn" onclick="copyToClipboard('info@sigmapi-academy.com', this)">
+              <i class="far fa-copy"></i>
+            </button>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+
+  <!-- Mobile Menu (hidden by default) -->
+  <div id="mobileMenu" class="mobile-menu hidden">
+    <div class="mobile-menu-item" data-key="xi">
+      <div class="mobile-menu-title">CLASS XI</div>
+      <div class="mobile-submenu">
+        <a href="coma1.html">COMA</a>
+        <a href="cbst1.html">CBST</a>
+        <a href="arti1.html">ARTI</a>
+        <a href="coms1.html">COMS</a>
+        <a href="dtsc1.html">DTSC</a>
+      </div>
+    </div>
+    <div class="mobile-menu-item" data-key="xii">
+      <div class="mobile-menu-title">CLASS XII</div>
+      <div class="mobile-submenu">
+        <a href="coma2.html">COMA</a>
+        <a href="cbst2.html">CBST</a>
+        <a href="arti2.html">ARTI</a>
+        <a href="coms2.html">COMS</a>
+        <a href="dtsc2.html">DTSC</a>
+      </div>
+    </div>
+    <div class="mobile-menu-item register-item" data-key="register">
+  <div class="mobile-menu-title register-btn" onclick="openModal()">Register</div>
+</div>
+    <div class="mobile-menu-item" data-key="contact">
+      <div class="mobile-menu-title">Contact Us</div>
+      <div class="mobile-submenu">
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <span>+91 9883183128</span>
+          <button class="copy-btn" onclick="copyToClipboard('+919883183128', this)">
+            <i class="far fa-copy"></i>
+          </button>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>info@sigmapi-academy.com</span>
+          <button class="copy-btn" onclick="copyToClipboard('info@sigmapi-academy.com', this)">
+            <i class="far fa-copy"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+
+<br><br><br><br>
+<div style="text-align: center;">
+  <span class="subject">COMPUTER APPLICATION</span>
+</div><!-- Syllabus Section -->
+<div class="px-6 py-12 bg-white dist">
+  <div class="max-w-6xl mx-auto space-y-16">
+
+    <!-- Semester III -->
+    <div class="bg-white rounded-3xl p-8 shadow-[0_0_12px_rgba(0,0,0,0.12)]">
+      <div class="flex justify-between items-center mb-8">
+        <h2 class="font-bold text-red-600 sem">Semester III</h2>
+        <a href="./detailedfiles/coma2a.html" class="text-blue-600 font-semibold hover:underlinee explore">Explore more</a>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-gray-50 hover:bg-white transition p-5 rounded-xl border shadow-sm text-center card-item">
+          <img src="/pictures/python logo.png" alt="Python Programming" class="w-14 h-14 mx-auto mb-3 object-cover rounded-full" />
+          <h3 class="font-semibold text-gray-800">Python Programming</h3>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-gray-50 hover:bg-white transition p-5 rounded-xl border shadow-sm text-center card-item">
+          <img src="/pictures/ecommerce.jpg" alt="E-Commerce" class="w-14 h-14 mx-auto mb-3 object-cover rounded-full" />
+          <h3 class="font-semibold text-gray-800">E-Commerce</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Semester IV -->
+    <div class="bg-white rounded-3xl p-8 shadow-[0_0_12px_rgba(0,0,0,0.12)]">
+      <div class="flex justify-between items-center mb-8">
+        <h2 class="font-bold text-red-600 sem">Semester IV</h2>
+        <a href="./detailedfiles/coma2b.html" class="text-blue-600 font-semibold hover:underline explore">Explore more</a>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-gray-50 hover:bg-white transition p-5 rounded-xl border shadow-sm text-center card-item">
+          <img src="/pictures/DBMS.png" alt="Database Management System" class="w-14 h-14 mx-auto mb-3 object-cover rounded-full" />
+          <h3 class="font-semibold text-gray-800">Database Management System</h3>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-gray-50 hover:bg-white transition p-5 rounded-xl border shadow-sm text-center card-item">
+          <img src="/pictures/data warehousing.jpeg" alt="Data Warehousing and Data Mining" class="w-14 h-14 mx-auto mb-3 object-cover rounded-full" />
+          <h3 class="font-semibold text-gray-800">Data Warehousing and Data Mining</h3>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-gray-50 hover:bg-white transition p-5 rounded-xl border shadow-sm text-center card-item">
+          <img src="/pictures/ai.jpeg" alt="Foundation of Artificial Intelligence (AI)" class="w-14 h-14 mx-auto mb-3 object-cover rounded-full" />
+          <h3 class="font-semibold text-gray-800">Foundation of Artificial Intelligence (AI)</h3>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<br><br><!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Left: Logo -->
+    <div class="footer-logo">
+      <a href="https://sigmapi-academy.com/" target="_blank" class="logo">
+        <img class="logo-img" src="/pictures/SigmaPi Logo.png" alt="logo" />
+        <span class="logo-text">Sigmapi-Academy</span>
+      </a>
+    </div>
+
+    <!-- Center: Quote -->
+    <div class="blockquote-container">
+      <blockquote>
+        <p>"Disciplined effort is the key to mastery."</p>
+        <cite>~ Satyender Kumar Mishra</cite>
+      </blockquote>
+    </div>
+
+    <!-- Right: Social Icons -->
+    <div class="footer-social">
+      <a href="https://api.whatsapp.com/send?phone=919883183128" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://www.facebook.com/sigma.pi.academy.com9883183128" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://x.com/SigmaPiAcademy" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.instagram.com/sigmapi.academy/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/satyender-mishra-75963799/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/@sigmapiacademy" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+
+  <div class="underline"></div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 SigmaPi. All Rights Reserved.</p>
+  </div>
+</footer>
+
+    <!-- Modal Structure -->
+  <div id="registerForm" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="/pictures/SigmaPi Logo.png" width="30px" height="30px" alt="Logo" />
+        <button class="close" onclick="closeModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+          <iframe style="width: 100%; height: 70vh;"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSe_km_Qpf4Vh0bY7QELvZ0QbQHFLHU4Y3b3SQg3X26aIQXtNw/viewform?embedded=true"
+            frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+    </div>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>

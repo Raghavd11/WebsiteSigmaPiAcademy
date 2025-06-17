@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Application Syllabus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/stylesheet.css">
+    <link rel="icon" type="image" href="/pictures/SigmaPi Logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="header">
+    <div class="logo-container">
+        <a href="/index.html"><img class="logo-img" src="/pictures/SigmaPi Logo.png" alt="SigmaPi-Academy Logo" style="border: none;"/></a>
+        <span class="logo-text">SigmaPi-Academy</span>
+    </div>
+  <nav class="navbar">
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links" id="navLinks">
+      <li class="dropdown">
+        <a href="#" class="nav-link">CLASS XI</a>
+        <div class="dropdown-content">
+          <a href="/html/arti1.html">COMA</a>
+          <a href="/html/cbst1.html">CBST</a>
+          <a href="/html/arti1.html">ARTI</a>
+          <a href="/html/coms1.html">COMS</a>
+          <a href="/html/dtsc1.html">DTSC</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="nav-link">CLASS XII</a>
+        <div class="dropdown-content">
+          <a href="/html/coma2.html">COMA</a>
+          <a href="/html/cbst2.html">CBST</a>
+          <a href="/html/arti2.html">ARTI</a>
+          <a href="/html/coms2.html">COMS</a>
+          <a href="/html/dtsc2.html">DTSC</a>
+        </div>
+      </li>
+      <li>
+        <a href="#" class="nav-link register-button" onclick="openModal()">Register</a>
+      </li>
+      <li class="contact-container">
+        <div class="nav-link">Contact Us
+          <!-- <i class="fas fa-comment-dots"></i> -->
+        </div>
+        <div class="contact-dropdown" id="contactDropdown">
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span class="contact-link">+91 9883183128</span>
+            <button class="copy-btn" onclick="copyToClipboard('+919883183128', this)">
+              <i class="far fa-copy"></i>
+            </button>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span class="contact-link">info@sigmapi-academy.com</span>
+            <button class="copy-btn" onclick="copyToClipboard('info@sigmapi-academy.com', this)">
+              <i class="far fa-copy"></i>
+            </button>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+
+  <!-- Mobile Menu (hidden by default) -->
+  <div id="mobileMenu" class="mobile-menu hidden">
+    <div class="mobile-menu-item" data-key="xi">
+      <div class="mobile-menu-title">CLASS XI</div>
+      <div class="mobile-submenu">
+        <a href="/html/coma1.html">COMA</a>
+        <a href="/html/cbst1.html">CBST</a>
+        <a href="/html/arti1.html">ARTI</a>
+        <a href="/html/coms1.html">COMS</a>
+        <a href="/html/dtsc1.html">DTSC</a>
+      </div>
+    </div>
+    <div class="mobile-menu-item" data-key="xii">
+      <div class="mobile-menu-title">CLASS XII</div>
+      <div class="mobile-submenu">
+        <a href="/html/coma2.html">COMA</a>
+        <a href="/html/cbst2.html">CBST</a>
+        <a href="/html/arti2.html">ARTI</a>
+        <a href="/html/coms2.html">COMS</a>
+        <a href="/html/dtsc2.html">DTSC</a>
+      </div>
+    </div>
+    <div class="mobile-menu-item register-item" data-key="register">
+  <div class="mobile-menu-title register-btn" onclick="openModal()">Register</div>
+</div>
+    <div class="mobile-menu-item" data-key="contact">
+      <div class="mobile-menu-title">Contact Us</div>
+      <div class="mobile-submenu">
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <span>+91 9883183128</span>
+          <button class="copy-btn" onclick="copyToClipboard('+919883183128', this)">
+            <i class="far fa-copy"></i>
+          </button>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>info@sigmapi-academy.com</span>
+          <button class="copy-btn" onclick="copyToClipboard('info@sigmapi-academy.com', this)">
+            <i class="far fa-copy"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<br><br><br><br>
+<div style="text-align: center;">
+  <span class="subject">COMPUTER APPLICATION</span>
+</div>
+<h2 class="detailed">Semester IV - Detailed Syllabus</h2>
+
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>Unit</th>
+        <th>Topics</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+  <td>
+    <div class="unit-wrapper">
+      <span class="unit-title">Unit 3:</span>
+      <span>Database Management System</span>
+    </div>
+  </td>
+  <td>
+    <strong>Introduction:</strong><br>
+    •Drawbacks of Legacy System, Advantages of DBMS, Layered Architecture of Database, Data Independence, Data Models, Schemas and Instances, Database Languages, Database Users, DBA, Data Dictionary.<br />
+
+    <strong>Entity Relationship (ER) Modeling:</strong><br>
+    •Entity, Attributes and Relationship, Structural Constraints, Keys (Super Key, Key, Candidate Key, Alternate Key, Primary Key), ER Diagram of Example Databases, Weak and Strong Entity Sets, Specialization and Generalization, Their Constraints, Aggregation.<br />
+
+    <strong>Relational Model:</strong><br>
+    •Basic Concepts of Relational Model, Relational Algebra.<br />
+
+    <strong>Integrity Constraints:</strong><br>
+    •Domain Constraints, Referential Integrity, View.<br />
+
+    <strong>SQL:</strong><br>
+    •Introduction, DDL and DML, Data types (char(n), varchar(n), int, float, date), Constraints (not null, unique, primary key), Commands: create/use/show/drop database, show tables, create/describe/alter/drop table, insert/delete/select/update. <br />
+    •Operators: Mathematical, Relational, Logical. Clauses: aliasing, distinct, where, in, between, order by. Handling NULL: is null, is not null, like.<br />
+    •Aggregate Functions: max, min, avg, sum, count. Grouping: group by, having clause.<br />
+    •Joins: Cartesian product, equi-join, natural join.<br />
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <div class="unit-wrapper">
+      <span class="unit-title">Unit 4:</span>
+      <span>Data Warehousing and Data Mining</span>
+    </div>
+  </td>
+  <td>
+    <strong>Introduction:</strong><br>
+    •What is Data Warehouse? Data Warehouse Modelling, Data Cube and OLAP, Data Warehouse Implementation.<br />
+    •Data Mining: What kind of data can be mined, what kind of patterns can be mined, Data Cleaning, Data Transformation Strategies, Overview.<br />
+
+    <strong>Data Mining Applications and Trends:</strong><br>
+    •Mining Sequence Data, Time Series, Symbolic, Biological, Statistical Data Mining, Visual and Audio Data Mining, Applications and Trends in Data Mining.<br />
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <div class="unit-wrapper">
+      <span class="unit-title">Unit 5:</span>
+      <span>Foundation of Artificial Intelligence (AI)</span>
+    </div>
+  </td>
+  <td>
+    <strong>Introduction to Artificial Intelligence:</strong><br>
+    •Definition and Scope of AI, Historical Overview and Key Milestones, Differentiating AI from Human Intelligence.<br />
+
+    <strong>AI Subfields and Technologies:</strong><br>
+    •Machine Learning: Supervised, Unsupervised, and Reinforcement Learning. <br />
+    •Deep Learning and Neural Networks, Natural Language Processing (NLP), Computer Vision.<br />
+
+    <strong>Applications of AI:</strong><br>
+    •AI in Finance: Fraud Detection, Algorithmic Trading, Risk Assessment.<br />
+    •AI in Customer Service and Chatbots.<br />
+    •AI in Education: Personalized Learning, Intelligent Tutoring Systems.<br />
+
+    <strong>Ethical and Social Implications of AI:</strong><br>
+    •Bias and Fairness in AI Systems, Impact on Employment and Workforce, AI and Social Inequality.<br />
+  </td>
+</tr>
+
+     
+    </tbody>
+  </table>
+</div>
+
+
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Left: Logo -->
+    <div class="footer-logo">
+      <a href="https://sigmapi-academy.com/" target="_blank" class="logo">
+        <img class="logo-img" src="/pictures/SigmaPi Logo.png" alt="logo" />
+        <span class="logo-text">Sigmapi-Academy</span>
+      </a>
+    </div>
+
+    <!-- Center: Quote -->
+    <div class="blockquote-container">
+      <blockquote>
+        <p>"Disciplined effort is the key to mastery."</p>
+        <cite>~ Satyender Kumar Mishra</cite>
+      </blockquote>
+    </div>
+
+    <!-- Right: Social Icons -->
+    <div class="footer-social">
+      <a href="https://api.whatsapp.com/send?phone=919883183128" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://www.facebook.com/sigma.pi.academy.com9883183128" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://x.com/SigmaPiAcademy" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.instagram.com/sigmapi.academy/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/satyender-mishra-75963799/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/@sigmapiacademy" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+
+  <div class="underline"></div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 SigmaPi. All Rights Reserved.</p>
+  </div>
+</footer>
+
+    <!-- Modal Structure -->
+  <div id="registerForm" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="/pictures/SigmaPi Logo.png" width="30px" height="30px" alt="Logo" />
+        <button class="close" onclick="closeModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+          <iframe style="width: 100%; height: 70vh;"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSe_km_Qpf4Vh0bY7QELvZ0QbQHFLHU4Y3b3SQg3X26aIQXtNw/viewform?embedded=true"
+            frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+    </div>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
